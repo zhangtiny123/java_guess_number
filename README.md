@@ -1,7 +1,24 @@
-ut-workshop
-===========
+# Guess Number
 
-workshop内容： 用TDD（Test Driven Development）开发一个简单的猜数字游戏：
+## 运行环境
+
+- JDK 8
+- IntelliJ IDE
+
+## 准备工作
+
+- 在操作系统上用相应的包管理工具安装 Maven
+- Clone本项目，在命令行执行 ```mvn test``` 能成功运行并测试通过
+
+## 需要使用的测试工具
+
+- [JUnit](http://junit.org)
+- [Mockito](https://code.google.com/p/mockito/)
+- [FEST Fluent Assertions](https://github.com/alexruiz/fest-assert-2.x)
+
+## 内容
+
+用TDD（Test Driven Development）开发一个简单的猜数字游戏：
 
 - 游戏开始后，系统会随机给出四个不重复的数字。由用户输入自己猜测的四个数字。
 - 如果数字猜对而且位置也对，就是1一个A。
@@ -11,16 +28,27 @@ workshop内容： 用TDD（Test Driven Development）开发一个简单的猜数
 例如：
 
 - 系统给出"1234"，用户输入"1234"
- - 返回"4A0B"
+  - 返回"4A0B"
 - 系统给出"1234"，用户输入"4321"
- - 返回"0A4B"
+  - 返回"0A4B"
 
-workshop过程
-- 共有三问
+## 授课过程
+
+- 共有四问
 - 每一问先写代码，然后展示代码，大家集体讨论，然后开始下一问（具体内容到现场提供）
 
-需要准备的：
+## 作业要求
 
-- 自带笔记本
-- IntelliJ CE 装好
-- clone本项目，执行mvn test能通过
+- 严格按照“先测试，后实现”的方式编写代码，但需要搞清楚“何时应该先写测试，何时应该后写测试”这个问题。
+- 严格按照面向对象（OOP）的方式编写代码。
+
+## 扩展思考
+
+- 什么是测试驱动开发（TDD）是行为驱动开发（BDD），以及这两者之间的关系。
+
+## 验收作业的三个层次（从低到高排序）
+
+1. 是否符合测试驱动开发的要求
+2. 是否符合面向对象编程的要求
+3. 是否合理使用了Java 8的新特性
+4. 是否使用了 [Guava](https://code.google.com/p/guava-libraries/) 改进编程
