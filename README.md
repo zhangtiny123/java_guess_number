@@ -3,12 +3,13 @@
 ## 运行环境
 
 - JDK 8
-- IntelliJ IDE
+- IntelliJ IDEA
 
 ## 准备工作
 
 - 在操作系统上用相应的包管理工具安装 Maven
 - Clone本项目，在命令行执行 ```mvn test``` 能成功运行并测试通过
+- 使用IntelliJ IDEA将本项目作为一个新的Maven项目导入并成功编译
 
 ## 需要使用的测试工具
 
