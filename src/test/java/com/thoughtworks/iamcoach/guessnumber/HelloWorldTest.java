@@ -14,7 +14,7 @@ public class HelloWorldTest {
     }
 
     @Test
-    public void should_be_mocked() {
+    public void should_be_mock() {
         HelloWorld helloWorld = mock(HelloWorld.class);
         when(helloWorld.beenCalled()).thenReturn("Hello World");
 
