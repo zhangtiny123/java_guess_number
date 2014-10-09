@@ -9,7 +9,7 @@ import static org.mockito.Mockito.when;
 
 public class HelloWorldTest {
     @Test
-    public void hello_world_test() {
+    public void demo_test() {
         assertThat("Hello World").isEqualTo("Hello World");
     }
 
