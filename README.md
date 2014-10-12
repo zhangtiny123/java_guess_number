@@ -10,6 +10,9 @@
 - 在操作系统上用相应的包管理工具安装 Maven
 - Clone本项目，在命令行执行 ```mvn test``` 能成功运行并测试通过
 - 使用IntelliJ IDEA将本项目作为一个新的Maven项目导入并成功编译
+- 使用 ```mvn test``` 命令可以运行全部测试
+- 使用 ```mvn clean package``` 命令可以清理、编译并打包项目至 ```target``` 目录
+- 使用 ```java -jar target/pos-1.0.jar``` 可运行打包后的程序
 
 ## 需要使用的测试工具
 
