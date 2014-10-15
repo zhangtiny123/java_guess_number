@@ -12,7 +12,7 @@ import static org.mockito.Mockito.when;
 
 public class CompareNumber {
     @Test
-    public void CompareNumberTest() {
+    public void compareNumberTest() {
         Number number = new Number();
         assertThat(number.compareNumber("2387", "2387")).isEqualTo("4A0B");
 
