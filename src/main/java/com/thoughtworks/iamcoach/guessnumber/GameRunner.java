@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
  */
 public class GameRunner {
     public static void main(String[] args) throws IOException{
-        Game newGame = new Game();
+        GameBackup newGame = new GameBackup();
         InputFilter inputFilter = new InputFilter();
         newGame.start();
         int i = 1;

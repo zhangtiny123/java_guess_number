@@ -2,14 +2,14 @@ package com.thoughtworks.iamcoach.guessnumber;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import java.io.PipedOutputStream;
 
 /**
  * Created by tiny on 14-10-15.
  */
-public class Game {
+public class GameBackup {
     private int leftTimes = 6;
     private String fourNumber = "";
-    private OutputStream outputStream;
 
     public String getFourNumber() {
         return fourNumber;
@@ -22,10 +22,6 @@ public class Game {
     public void start() throws IOException{
         Number number = new Number();
         this.fourNumber = number.generateFourNumber();
-
-//
-//        this.outputStream.write("Welcome!".getBytes());
-//        this.outputStream.write("Please input your number(6):".getBytes());
 
         System.out.println("Welcome!");
         System.out.println("Please input your number(6):");
@@ -52,7 +48,7 @@ public class Game {
     }
 
     public void gameOver() {
-        System.out.println("Game over!");
+        System.out.println("GameBackup over!");
 
     }
 }
