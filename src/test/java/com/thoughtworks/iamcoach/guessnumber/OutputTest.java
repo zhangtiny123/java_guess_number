@@ -18,8 +18,8 @@ public class OutputTest {
     public void testOutput() throws IOException {
         String inputMessage = "welcome!";
         OutputStream outputStream = mock(OutputStream.class);
-        Output output = new Output();
-        output.print(inputMessage, outputStream);
+        Output output = new Output(outputStream);
+        output.print(inputMessage);
         verify(outputStream).write("welcome!".getBytes());
 
     }

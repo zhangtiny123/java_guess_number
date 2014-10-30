@@ -7,7 +7,18 @@ import java.io.OutputStream;
  * Created by tiny on 14-10-28.
  */
 public class Output {
-    public void print(String inputMessage, OutputStream outputStream) throws IOException {
+
+    public Output(OutputStream outputStream) {
+        this.outputStream = outputStream;
+    }
+
+    private OutputStream outputStream;
+
+    public void print(String inputMessage) throws IOException {
         outputStream.write(inputMessage.getBytes());
+    }
+
+    public void outPrint(String inputMessage) {
+        System.out.println(inputMessage);
     }
 }
