@@ -14,7 +14,7 @@ public class Game {
     private final BufferedReader bufferedReader;
     private static final String SUCCESS_MESSAGE = "congratulations!";
     private static final String GAME_OVER = "game over!";
-    private static final String WELCOME_MESSAGE = "Welcome!\n";
+    private static final String WELCOME_MESSAGE = "Welcome!";
     private static final String TIPS_MESSAGE = "\nPlease input your number";
     private int leftTimes;
     private String fourNumber;
@@ -36,7 +36,7 @@ public class Game {
 
     public String startMessage(){
         return WELCOME_MESSAGE +
-                TIPS_MESSAGE+"("+this.leftTimes+"):";
+                TIPS_MESSAGE+"("+this.leftTimes+"):\n";
     }
 
     public String runOneStep(String inputNumber) {

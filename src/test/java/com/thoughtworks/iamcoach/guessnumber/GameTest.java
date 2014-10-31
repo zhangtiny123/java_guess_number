@@ -24,7 +24,7 @@ public class GameTest {
         Game game = new Game(number);
         String startMessage = game.startMessage();
 
-        assertThat(startMessage).isEqualTo("Welcome!\nPlease input your number(6):");
+        assertThat(startMessage).isEqualTo("Welcome!\nPlease input your number(6):\n");
     }
 
     @Test
