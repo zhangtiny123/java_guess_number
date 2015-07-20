@@ -1,20 +1,26 @@
 package com.thoughtworks.iamcoach.guessnumber;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
 public class ForCiTest {
+
+    private ForCi forCi;
+
+    @Before
+    public void setUp() throws Exception {
+        forCi = new ForCi();
+    }
+
     @Test
     public void should_return_5_when_2_plus_3() {
-        // given
-
-        //when
-        ForCi forCi = new ForCi();
-        int plus = forCi.plus(2, 3);
-
-        //then
-        assertThat(plus, is(5));
+        assertThat(forCi.plus(2, 3), is(5));
+    }
+    @Test
+    public void should_return_9_when_3_plus_6(){
+        assertThat(forCi.plus(3, 6), is(9));
     }
 }
