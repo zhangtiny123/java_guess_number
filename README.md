@@ -58,3 +58,4 @@
 2. 是否符合面向对象编程的要求
 3. 是否合理使用了Java 8的新特性
 4. 是否使用了 [Guava](https://code.google.com/p/guava-libraries/) 改进编程
+5. 是否能够联通jenkins!!!
